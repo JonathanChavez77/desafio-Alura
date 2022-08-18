@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="disenho.css">
+</head>
+<body>
+  
+  <main class="container">
+    <section class="logo-img">
+      <img src="img/Vector.png" alt="logo-alura">
+    </section>
+    <section class="principal">
+      <article class="text-description">
+        <input id="input" class="input" name="text" type="text" placeholder="Ingresa el texto aquí" >
+        <p class="text-error">El campo no puede llevar acentos ni Mayusculas ni simbolos y no puede estar vacio.</p>
+      </article>
+      <article class="btn-group">
+        <div class="alert">
+          <img src="img/signo.svg" class="info-icon" alt="icon">
+          <p class="text">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="btn-flex">
+          <button id="encriptar"  class="btn btn-encriptar disab"> <img src="img/bloquear.svg" alt="lock"> Encriptar</button>
+          <button id="desencriptar"  class="btn btn-desencriptar disab"> <img src="img/desbloquear.svg" alt="unlock"> Desencriptar</button>
+        </div>
+      </article>
+    </section>
+    <section class="aside">
+      <article class="message-card" id="message-card">
+        <div class="card" id="card">
+          <img class="message-img" src="img/figura.svg" alt="vector"> 
+          <h4 class="message-title">Ningún mensaje fue encontrado
+          <p class="message-description">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+      </article>
+
+      <article class="message" id="message-answer">
+        <p class="message-answer" id="answer"></p>
+        <button class="btn btn-copy" id="btn-copy">COPIAR </button>
+      </article>
+
+    </section>
+  </main>
+
+
+  <script src="configuracion.js"></script>
+</body>
+</html>
